@@ -24,3 +24,14 @@ function Post(form) {
 
   alert("Formulário enviado com sucesso!");
 }
+
+function HabilitarEnvio() {
+    let termos = document.getElementById("termos");
+    let btnEnviar = document.getElementById("btnEnviar");
+
+    if (termos.checked) {
+        btnEnviar.disabled = false;
+    } else {
+        btnEnviar.disabled = true;
+    }
+}
